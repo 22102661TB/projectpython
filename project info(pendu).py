@@ -12,7 +12,8 @@ liste_mots = ["correction", "opportuniste", "ascenseur", "evrest", "situation", 
 from bs4 import BeautifulSoup
 from urllib.request import urlopen
 html= urlopen("http://www.google.com")
-bsObj = BeautifulSoup(html)
+bsObj = BeautifulSoup(html) 
+# machin truc voir si ça sauve garde
 
 # Choisir un mot aléatoire de la liste
 mot_a_deviner = random.choice(liste_mots)
