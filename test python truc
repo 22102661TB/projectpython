@@ -1,3 +1,4 @@
+
 import tkinter as tk
 import random
 
@@ -11,6 +12,13 @@ fenetre.mainloop()#lancé la boucle pour pouvoir avoir la fenfetre
 
 # Définir la liste de mots pour le jeu
 liste_mots = ["correction", "opportuniste", "ascenseur", "evrest", "situation", "saturation", "programmeur","aviateur","musicien"]
+
+# touvé un mots sur intrnette (a complé pour avoir plus de mots) 
+
+from bs4 import BeautifulSoup
+from urllib.request import urlopen
+html= urlopen("http://www.google.com")
+bsObj = BeautifulSoup(html)
 
 # Choisir un mot aléatoire de la liste
 mot_a_deviner = random.choice(liste_mots)
